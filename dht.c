@@ -156,14 +156,6 @@ TIMEZONE
 
 #define SYSTEM_PARTITION_CUSTOMER_PRIV_PARAM SYSTEM_PARTITION_CUSTOMER_BEGIN
 
-//#define CONFIG_ENABLE_IRAM_MEMORY 1
-//#ifdef CONFIG_ENABLE_IRAM_MEMORY
-//uint32 user_iram_memory_is_enabled(void)
-//{
-//	return CONFIG_ENABLE_IRAM_MEMORY;
-//}
-//#endif
-
 uint32 priv_param_start_sec;
 static const partition_item_t at_partition_table[] = {
 	{ SYSTEM_PARTITION_BOOTLOADER, 			0x0, 												0x1000},
@@ -1068,8 +1060,7 @@ uint8 ICACHE_FLASH_ATTR cron_parser(char * cronline) {
 
 void read_sensor() {
 	uint8 i;
-	//for (i = 0; i < 41; i++)
-		//os_printf("pl[%u] %u\n", i, pulse_length[i]);
+	
 	memset(pulse_length, 0, sizeof(pulse_length));
 	
 	//open the bus
