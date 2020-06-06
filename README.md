@@ -15,17 +15,17 @@ wget https://github.com/espressif/ESP8266_NONOS_SDK/archive/v3.0.3.tar.gz
 
 tar -zxf ESP8266_NONOS_SDK-v3.0.3.tar.gz
 
-mkdir -p ESP8266_NONOS_SDK-3.0.3/timer/user
+mkdir -p ESP8266_NONOS_SDK-3.0.3/dht/user
 
-cp user_main.c ESP8266_NONOS_SDK-3.0.3/timer/user
+cp user_main.c ESP8266_NONOS_SDK-3.0.3/dht/user
 
-cp ESP8266_NONOS_SDK-3.0.3/examples/IoT_Demo/Makefile ESP8266_NONOS_SDK-3.0.3/timer
+cp ESP8266_NONOS_SDK-3.0.3/examples/IoT_Demo/Makefile ESP8266_NONOS_SDK-3.0.3/dht
 
 Comment out "driver" lines in Makefile above
 
-cp -r ESP8266_NONOS_SDK-3.0.3/examples/IoT_Demo/include ESP8266_NONOS_SDK-3.0.3/timer/
+cp -r ESP8266_NONOS_SDK-3.0.3/examples/IoT_Demo/include ESP8266_NONOS_SDK-3.0.3/dht/
 
-cp SP8266_NONOS_SDK-3.0.3/examples/IoT_Demo/user/Makefile ESP8266_NONOS_SDK-3.0.3/timer/user 
+cp SP8266_NONOS_SDK-3.0.3/examples/IoT_Demo/user/Makefile ESP8266_NONOS_SDK-3.0.3/dht/user 
 
 Install esp-open-sdk first for crosscompiling!
 
