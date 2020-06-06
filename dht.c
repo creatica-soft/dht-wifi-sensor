@@ -328,7 +328,7 @@ void ICACHE_FLASH_ATTR process_data_cb() {
 		os_sprintf(s, "error=checksum&hh=%u&hl=%u&th=%u&tl=%u&cs=%u", hh, hl, th, tl, cs);
 	}
 	else {
-		os_sprintf(s, "T=%d.%u&H=%u.%u", (sint16)th, tl, hh, hl);
+		os_sprintf(s, "t=%d.%u&h=%u.%u", (sint16)th, tl, hh, hl);
 	}
 	os_printf("%s\n", s);
 	http_update_cb(s);
