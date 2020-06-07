@@ -36,6 +36,8 @@ rrdtool create /var/env.rrd \
           RRA:MAX:0.5:1h:1M \
           RRA:MAX:0.5:1d:1y \
           RRA:MAX:0.5:1d:10y
+          
+rrdtool fetch /var/env.rrd LAST
 ```
 
 (install php-rrd)
