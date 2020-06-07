@@ -54,6 +54,13 @@ if (!rrd_update("/var/env.rrd", $values)) {
 ?>
 ```
 
+dht-timer-parameters.txt
+
+```
+* 0 * * * *
+55000
+0
+```
 
 ## Compiling and Flashing
 
