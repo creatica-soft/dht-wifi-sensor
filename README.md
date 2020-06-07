@@ -40,7 +40,7 @@ rrdtool create /var/env.rrd \
 
 (install php-rrd)
 
-cat dht.php 
+### dht.php 
 
 ```
 <?php
@@ -54,7 +54,7 @@ if (!rrd_update("/var/env.rrd", $values)) {
 ?>
 ```
 
-dht-timer-parameters.txt
+### dht-timer-parameters.txt
 
 ```
 * 0 * * * *
