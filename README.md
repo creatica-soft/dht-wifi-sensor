@@ -27,7 +27,7 @@ cp -r ESP8266_NONOS_SDK-3.0.3/examples/IoT_Demo/include ESP8266_NONOS_SDK-3.0.3/
 
 cp SP8266_NONOS_SDK-3.0.3/examples/IoT_Demo/user/Makefile ESP8266_NONOS_SDK-3.0.3/dht/user 
 
-Install esp-open-sdk first for crosscompiling!
+Install esp-open-sdk first for crosscompiling: https://github.com/pfalcon/esp-open-sdk
 
 export PATH=~/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
 
